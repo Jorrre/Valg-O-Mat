@@ -1,1 +1,5 @@
-# Valg-O-Mat
+## Valg-O-Mat
+
+---
+
+\underline{**Struktur**}
