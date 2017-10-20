@@ -2,4 +2,4 @@
 
 ---
 
-\underline{**Struktur**}
+**Struktur:**
