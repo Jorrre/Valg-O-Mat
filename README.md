@@ -1,5 +1,3 @@
 ## Valg-O-Mat
 
----
-
 **Struktur:**
