@@ -1,0 +1,102 @@
+{
+  "spm": [
+    { "id": 1,
+      "q": "Er du glad i å jobbe med teori hele dagen uten noen form for praktiske øvelser?",
+      "vekt": [
+        [0,0,0,0,0,0],
+        [0,0,0,0,0,0],
+        [0,0,0,0,0,0]
+      ]
+    },
+    { "id": 2,
+      "q": "Jeg ønsker å være med å på finne nye tekniske løsninger som gjør hverdanen enklere og miljøet bedre.",
+      "vekt": [
+        [0,0,0,0,0,0],
+        [0,0,0,0,0,0],
+        [0,0,0,0,0,0]
+      ]
+    },
+    { "id": 3,
+      "q": "Liker du praktiske fag?",
+      "vekt": [
+        [0,0,0,0,0,0],
+        [0,0,0,0,0,0],
+        [0,0,0,0,0,0]
+      ]
+    },
+    {
+      "id": 4,
+      "q": "Ønsker du en lærlingeplass med lønn som en del av utdannelsen din?",
+      "vekt": [
+        [0,0,0,0,0,0],
+        [0,0,0,0,0,0],
+        [0,0,0,0,0,0]
+      ]
+    },
+    { "id": 5,
+      "q": "Jeg liker å gå i butikker som Clas Ohlson, Biltema, Jula, Kjell og Kompani etc.",
+      "vekt": [
+        [0,0,0,0,0,0],
+        [0,0,0,0,0,0],
+        [0,0,0,0,0,0]
+      ]
+    },
+    { "id": 6,
+      "q": "Du får en PC fra noen du kjenner. Det viser seg at maskinen ikke virker. Begynner du å lete på nettet for å finne ut av feilen og setter i gang med å reparere den selv?",
+      "vekt": [
+        [0,0,0,0,0,0],
+        [0,0,0,0,0,0],
+        [0,0,0,0,0,0]
+      ]
+    },
+    { "id": 7,
+      "q": "Det skal lages et nytt kjøkken hjemme hos deg, og alt det elektriske må gjøres om. Er du interessert i hvordan elektrikeren løser dette arbeidet?",
+      "vekt": [
+        [0,0,0,0,0,0],
+        [0,0,0,0,0,0],
+        [0,0,0,0,0,0]
+      ]
+    },
+    { "id": 8,
+      "q": "Vet du hva en loddebolt er?",
+      "vekt": [
+        [0,0,0,0,0,0],
+        [0,0,0,0,0,0],
+        [0,0,0,0,0,0]
+      ]
+    },
+    { "id": 9,
+      "q": "Jeg kunne tenke meg å jobbe med styringssystemer som skal sikre gode klima og miljøforhold i boliger og næringsbygg.",
+      "vekt": [
+        [0,0,0,0,0,0],
+        [0,0,0,0,0,0],
+        [0,0,0,0,0,0]
+      ]
+    },
+    { "id": 10,
+      "q": "Jeg tror matematikk vil være viktig i mitt fremtidige yrkesvalg.",
+      "vekt": [
+        [0,0,0,0,0,0],
+        [0,0,0,0,0,0],
+        [0,0,0,0,0,0]
+      ]
+    },
+    { "id": 11,
+      "q": "I matematikk får jeg normalt karateren 4 eller bedre.",
+      "vekt": [
+        [0,0,0,0,0,0],
+        [0,0,0,0,0,0],
+        [0,0,0,0,0,0]
+      ]
+    }
+  ],
+
+  "alt": [
+    "Du bør kanskje vurdere en annen studierettning.",
+    "Elektrofag passer bra for deg!",
+    "Elektrofag med Data og Elektronikk som fordypning ser ut til å passe for deg!",
+    "Elektrofag med El-Energi som fordypning passer ser ut til å passe for deg!",
+    "Elektrofag med Ventilasjonsteknikk som fordypning ser ut til å passe for deg!",
+    "Elektrofag med studiekompetanse ser ut til å passe for deg!!"
+  ]
+}

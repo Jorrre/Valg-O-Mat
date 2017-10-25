@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="no">
+    <head>
+        <title>Valg-O-Mat</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+
+        <!-- Bootstrap Meta Tags-->
+        <meta chttp-equiv="Content-Type" content="text/html;" charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+        
+        <link rel="stylesheet" href="{{ url_for('static', filename='styling.css') }}"> <!--href="{{ url_for('static', filename='styling.css') }}"-->
+    </head>
+    
+    <body>
+        
+        <div class="container-fluid">
+            <div class="row">
+                
+                <div class="jumbotron action-area">
+                    <div class="vert-cent">
+                        <h2 class="title title-slides">{{ question }}</h2>
+                    </div>
+                    
+                    <form action="/next" method="POST" id="answers" class="answers d-block">
+                        <div class="form-group">
+                            <input type="radio" name="input" value="ja">Ja<br>
+                            <input type="radio" name="input" value="usikker">Vet ikke<br>
+                            <input type="radio" name="input" value="nei">Nei
+                        </div>    
+                    </form> <!-- /answers -->
+                    <form action="/done" method="POST" id="done" class="done-form" style="visibility: hidden;"></form>
+                    
+                    <div class="row buttonrow">
+                        {% if counter == 10%}
+                            <p><button form="done" name="sender" value="NEXT" formmethod="post" class="btn btn-lg btn-success btn-next">Neste</button></p>
+                        {% else %}
+                            <p><button form="answers" name="sender" value="NEXT" formmethod="post" class="btn btn-lg btn-success btn-next">Neste</button></p>
+                        {% endif %}
+                    </div> <!-- /buttons -->
+                    
+                </div> <!-- /jumbotron -->
+                
+                
+            </div> <!-- /row -->
+        </div> <!-- /Container-fluid -->
+        
+    </body>
+</html>
