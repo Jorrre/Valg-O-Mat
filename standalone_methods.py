@@ -1,3 +1,6 @@
+
+# Må finne en måte å sortere rankings[] på samtidig som man vet hvilken verdi som tilhører hvilket alternativ ("alt" i json filen)
+
 def result():
     for e in range(0, len(answers) - 1):
         if answers[e] == 'Ja':
