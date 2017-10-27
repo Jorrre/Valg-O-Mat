@@ -10,11 +10,7 @@ with open('./static/data.json') as data:
 
 # Variables
 answers = []
-rankings = [
-    "Du bør kanskje vurdere en annen studierettning.",
-    "Elektrofag med studiekompetanse ser ut til å passe for deg!",
-    "Maske og hår passer fint for deg! Snakk med Åse fra Westerdals! Hilsen Oberst Tonmäster Herland!"
-]
+rankings = [0, 0, 0, 0, 0, 0]
 
 g = 0
 varBtn = "Neste"
@@ -47,7 +43,7 @@ def next():
                     else:
                         return render_template('slides.html', question=j['spm'][g]['q'], varBtn = "Neste Spørsmål")
     else:
-        return "NOOOOO"
+        return "NOOOOO" #eller "Du må velge et av alternativene"
 
 if __name__ == "__main__":
     app.run()
