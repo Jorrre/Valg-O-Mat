@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DCOTYPE html>
 <html lang="no">
     <head>
         <title>Valg-O-Mat</title>
@@ -9,20 +9,38 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
 
-        <link rel="stylesheet" href="{{ url_for('static', filename='styling.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
     </head>
-
     <body>
-
         <div class="container-fluid">
-                <div class="row">
+            <div class="row">
 
-                    <div class="jumbotron action-area">
-                        HEIHEOHEIEHEIEHIE
-                    </div> <!-- /jumbotron -->
+                <div class="jumbotron action-area">
+                    
+                    <h2 class="title">Resultat</h2>
+                    
+                    <div class="mainBody">
+                        
+                        <ol class="ranking">
+                            <h4><li>{{ rankings[0] }}</li></h4>
+                            <h4><li>{{ rankings[1] }}</li></h4>
+                            <h4><li>{{ rankings[2] }}</li></h4>
+                        </ol>
+                        
+                        <section class="promo">
+                            <p>
+                                Om du lurer på noe om et av studierettningene, eller vil snakke med en elev eller lærer gå til <a href="https://www.rud.vgs.no">Rud VGS sin nettside</a>.
+                            </p>
+                        </section>
+                    </div>
+                    
+                    <form id="restart" action="/restart" method="post">
+                        <button form="restart" name="restart" class="btn btn-lg btn-success btn-restart">Start på nytt</button>
+                    </form>
+                    
+                </div> <!-- /jumbotron -->
 
-                </div> <!-- /row -->
-            </div> <!-- /Container-fluid -->
-
+            </div> <!-- /row -->
+        </div> <!-- /Container-fluid -->
     </body>
 </html>
