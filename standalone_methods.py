@@ -23,7 +23,7 @@ def result():
                 rankings[i] += j['spm'][e]['vekt'][1][i]
 
     winners = rankings
-    winners.sort
+    winners.sort(reverse=True)
     
     # Sorterer svaralternativstringene
     for x in range(0, len(winners) - 1):
