@@ -7,24 +7,25 @@ answers = ['Nei', 'Nei', 'Nei', 'Nei', 'Nei', 'Nei', 'Nei', 'Nei', 'Nei', 'Nei',
 winners_alt = []
 
 
-def result():
+def result(user_answers):
     rankings = [0, 0, 0, 0, 0, 0]
 
     # Summerer opp poengene
-    for e in range(0, len(answers) - 1):
-        if answers[e] == 'Ja':
+    for e in range(0, len(user_answers) - 1):
+        if user_answers[e] == 'Ja':
             for i in range(0, len(rankings) - 1):
                 rankings[i] += j['spm'][e]['vekt'][0][i]
-        elif answers[e] == 'Nei':
+        elif user_answers[e] == 'Nei':
             for i in range(0, len(rankings) - 1):
                 rankings[i] += j['spm'][e]['vekt'][2][i]
         else:
             for i in range(0, len(rankings) - 1):
                 rankings[i] += j['spm'][e]['vekt'][1][i]
 
+    # Kopierer rankings[] til winners[] for å sortere winners
     winners = []
-    for g in rankings:
-        winners.append(g)
+    for k in rankings:
+        winners.append(k)
     winners.sort(reverse=True)
 
     # Sorterer svaralternativstringene
@@ -34,10 +35,15 @@ def result():
                 winners_alt.append(j['alt'][y])
                 break
 
+    print(winners_alt)
+
     # Endrer på plasseringsnummerene hvis det er flere svaralternativer som har like mange poeng
     for f in range(0, len(winners_alt) - 1):
         if f < len(winners_alt) - 1 and winners_alt[f] == winners_alt[f + 1]:
             # sett plasseringstallet til winners_alt[f + 1] til winners_alt[f]
+            print("")
+
+result(answers)
 
 '''
     --== NOTES ==--
@@ -45,4 +51,5 @@ def result():
     Bytt navn på rankings[] til winners_alt[] i app.py og fjern alle verdiene.
     rankings[] blir definert som et lokalt array inne i result().
     rankings i done.html må byttes ut med winners_alt
+    --== END ==--
 '''
