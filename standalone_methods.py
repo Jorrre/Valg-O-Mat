@@ -3,13 +3,13 @@ import json
 with open('./static/data.json') as data:
     j = json.load(data)
 
-answers = []
+answers = ['Nei', 'Nei', 'Nei', 'Nei', 'Nei', 'Nei', 'Nei', 'Nei', 'Nei', 'Nei', 'Nei']
 winners_alt = []
 
 
 def result():
     rankings = [0, 0, 0, 0, 0, 0]
-    
+
     # Summerer opp poengene
     for e in range(0, len(answers) - 1):
         if answers[e] == 'Ja':
@@ -22,24 +22,27 @@ def result():
             for i in range(0, len(rankings) - 1):
                 rankings[i] += j['spm'][e]['vekt'][1][i]
 
-    winners = rankings
+    winners = []
+    for g in rankings:
+        winners.append(g)
     winners.sort(reverse=True)
-    
+
     # Sorterer svaralternativstringene
     for x in range(0, len(winners) - 1):
         for y in range(0, len(rankings) - 1):
             if winners[x] == rankings[y]:
                 winners_alt.append(j['alt'][y])
                 break
-    
-    # Endrer på plasseringsnummerene hvis det er flere svaralternativer som har like mange poeng           
+
+    # Endrer på plasseringsnummerene hvis det er flere svaralternativer som har like mange poeng
     for f in range(0, len(winners_alt) - 1):
         if f < len(winners_alt) - 1 and winners_alt[f] == winners_alt[f + 1]:
             # sett plasseringstallet til winners_alt[f + 1] til winners_alt[f]
-    '''
+
+'''
     --== NOTES ==--
     winners_alt[] inneholder j['alt'] stringene i sortert rekkefølge
-    Bytt navn på rankings[] til winners_alt[] i app.py og fjern alle verdiene. 
+    Bytt navn på rankings[] til winners_alt[] i app.py og fjern alle verdiene.
     rankings[] blir definert som et lokalt array inne i result().
     rankings i done.html må byttes ut med winners_alt
-    '''  
+'''
