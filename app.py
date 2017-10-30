@@ -13,6 +13,9 @@ answers = []
 rankings = [0, 0, 0, 0, 0, 0]
 
 g = 0
+qt = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+random.shuffle(g)
+
 varBtn = "Neste"
 
 @app.route('/')
@@ -38,10 +41,11 @@ def next():
             else:
                 g += 1
                 if request.method == 'POST':
+                    y = qt[g]
                     if g == 9:
-                        return render_template('slides.html', question=j['spm'][g]['q'], varBtn = "Fullfør")
+                        return render_template('slides.html', question=j['spm'][y]['q'], varBtn = "Fullfør")
                     else:
-                        return render_template('slides.html', question=j['spm'][g]['q'], varBtn = "Neste Spørsmål")
+                        return render_template('slides.html', question=j['spm'][y]['q'], varBtn = "Neste Spørsmål")
     else:
         return "NOOOOO" #eller "Du må velge et av alternativene"
 
