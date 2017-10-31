@@ -4,6 +4,7 @@ from flask import Flask, render_template, request, redirect, url_for
 import json
 import random
 app = Flask(__name__)
+from some import result
 
 with open('./static/data.json') as data:
     j = json.load(data)
