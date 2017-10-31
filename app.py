@@ -10,7 +10,6 @@ with open('./static/data.json') as data:
 
 # Variables
 answers = []
-rankings = [0, 0, 0, 0, 0, 0]
 
 g = 0
 qt = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
