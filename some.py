@@ -1,4 +1,3 @@
-
 def result(user_answers, data_file):
     winners_alt = []
     rankings = [0, 0, 0, 0, 0, 0]
