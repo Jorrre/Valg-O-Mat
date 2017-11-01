@@ -23,9 +23,9 @@
                 <row>
                     <form id="answers" action="/next" method="post" class="answers d-block">
                         <div class="form-group">
-                            <input type="radio" name="input" value="Ja"> Ja<br>
-                            <input type="radio" name="input" value="Usikker"> Vet Ikke<br>
-                            <input type="radio" name="input" value="Nei"> Nei
+                            <input type="radio" checked="{{ check }}" name="input" value="Ja"> Ja<br>
+                            <input type="radio" checked="{{ check }}" name="input" value="Usikker"> Vet Ikke<br>
+                            <input type="radio" checked="{{ check }}" name="input" value="Nei"> Nei
                         </div>
                     </form>
                 </row>
