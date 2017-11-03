@@ -29,7 +29,7 @@
 
 ### Spørsmål og `data.json`
 
-Alle spørsmål som lastes gjennom programmet ligger i `data.json`. JSON filen er strukturert med et array som holder spørsmålene, og vektingene til forskjellige spørsmålene. For å legge til et nytt spørsmål, legg til blokken under på slutten av "spm" arrayet på starten av `data.json`.
+Alle spørsmål som lastes gjennom programmet ligger i `data.json`. JSON filen er strukturert med et array som holder spørsmålene sin ID, tekst, og vekting. For å legge til et nytt spørsmål, legg til blokken under på slutten av "spm" arrayet på starten av `data.json`.
 
 **Viktig:** For at .json filen skal fungere etter blokken er lagt inn, legg til et komma rett etter den siste krøllparantesen før blokken blir limt inn.
 
@@ -46,3 +46,7 @@ Alle spørsmål som lastes gjennom programmet ligger i `data.json`. JSON filen e
 ```
 
 For å vekte spørsmålene, bruk de 3 nested arrayene under "vekt" under hvert av spørsmålene. Fra topp til bunn representerer arrayene "Ja", "Vet ikke" og "Nei".
+
+### Oppbyggelse
+
+Programmet er bygget på en kombinasjon av Python, HTML, CSS, JSON og JavaScript.
