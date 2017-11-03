@@ -50,3 +50,5 @@ For å vekte spørsmålene, bruk de 3 nested arrayene under "vekt" under hvert a
 ### Oppbyggelse
 
 Programmet er bygget på en kombinasjon av Python, HTML, CSS, JSON og JavaScript.
+
+Selve GUIen er bygget i HTML5 og CSS3, der spørsmålene blir hentet inn fra JSON via Flask for Pyhton.
