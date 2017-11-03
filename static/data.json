@@ -58,7 +58,7 @@
       ]
     },
     { "id": 8,
-      "q": "Vet du hva en loddebolt er?",
+      "q": "Jeg ønsker å bidra til vidreutvikling av dagens plusshus.",
       "vekt": [
         [0, 0, 0, 0, 0, 0],
         [0, 0, 0, 0, 0, 0],
@@ -66,7 +66,7 @@
       ]
     },
     { "id": 9,
-      "q": "Jeg kunne tenke meg å jobbe med styringssystemer som skal sikre gode klima og miljøforhold i boliger og næringsbygg.",
+      "q": "Jeg ønsker å jobbe med styringssystemer som skal sikre et godt inneklima.",
       "vekt": [
         [0, 0, 0, 6, 10, 0],
         [0, 0, 0, 0, 0, 0],
@@ -87,6 +87,14 @@
         [0, 0, 5, 3, 3, 10],
         [0, 0, 0, 0, 0, 0],
         [0, 0, 5, 6, 6, 0]
+      ]
+    },
+    { "id": 12,
+      "q": "Mener du at elektrisitet som energikilde vil være viktig i vårt framtidige samfunn?",
+      "vekt": [
+        [0, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0, 0],
+        [10, 0, 0, 0, 0, 0]
       ]
     }
   ],
