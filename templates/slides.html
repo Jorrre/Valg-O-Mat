@@ -23,16 +23,16 @@
                 <row>
                     <form id="answers" action="/next" method="post" class="answers d-block">
                         <div class="form-group">
-                            <input type="radio" checked="{{ check }}" name="input" value="Ja"> Ja<br>
-                            <input type="radio" checked="{{ check }}" name="input" value="Usikker"> Vet Ikke<br>
-                            <input type="radio" checked="{{ check }}" name="input" value="Nei"> Nei
+                            <input type="radio" name="input" value="Ja" onclick="document.getElementById('senderBtn').disabled = false;"> Ja<br>
+                            <input type="radio" name="input" value="Usikker" onclick="document.getElementById('senderBtn').disabled = false;"> Vet Ikke<br>
+                            <input type="radio" name="input" value="Nei" onclick="document.getElementById('senderBtn').disabled = false;"> Nei
                         </div>
                     </form>
                 </row>
                 
                 <row>
                     <div class="col-md-12 rowBtn">
-                        <button form="answers" name="sender" value="NEXT" formmethod="post" class="btn btn-lg btn-success btn-next">{{ varBtn }}</button>
+                        <button disabled id="senderBtn" form="answers" name="sender" value="NEXT" formmethod="post" class="btn btn-lg btn-success btn-next">{{ varBtn }}</button>
                     </div>
                 </row>
                 
