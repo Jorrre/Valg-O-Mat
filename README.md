@@ -34,15 +34,15 @@ Alle spørsmål som lastes gjennom programmet ligger i `data.json`. JSON filen e
 **Viktig:** For at .json filen skal fungere etter blokken er lagt inn, legg til et komma rett etter den siste krøllparantesen før blokken blir limt inn.
 
 ```json
-	{ 	
-		"id": 1,
-		"q": "Spørsmål 1",
-		"vekt": [
-			[0, 0, 0, 0, 0, 0],
-			[0, 0, 0, 0, 0, 0],
-			[0, 0, 0, 0, 0, 0]
-		]
-	}
+{ 	
+	"id": 1,
+	"q": "Spørsmål 1",
+	"vekt": [
+		[0, 0, 0, 0, 0, 0],
+		[0, 0, 0, 0, 0, 0],
+		[0, 0, 0, 0, 0, 0]
+	]
+}
 ```
 
 For å vekte spørsmålene, bruk de 3 nested arrayene under "vekt" under hvert av spørsmålene. Fra topp til bunn representerer arrayene "Ja", "Vet ikke" og "Nei".
