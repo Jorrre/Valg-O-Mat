@@ -36,9 +36,6 @@ def next():
             return render_template('done.html', rankings=winners_alt)
         else:
             g += 1
-
-            print(g)
-
             if request.method == 'POST':
                 if g == 10:
                     return render_template('slides.html', question=j['spm'][g]['q'], varBtn = "Fullfør", check="")
