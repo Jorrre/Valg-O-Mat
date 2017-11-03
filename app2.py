@@ -7,21 +7,14 @@ import random
 import io
 app = Flask(__name__)
 
-aha = io.open('./static/data.json', 'r')
-file_content = aha.read()
+encoding = io.open('./static/data.json', 'r')
+file_content = encoding.read()
 file_content = file_content.replace('Ã¥', 'å')
 file_content = file_content.replace('Ã¸', 'ø')
 file_content = file_content.replace('Ã˜', 'Ø')
 file_content = file_content.replace('Ã¦', 'æ')
 
 j = json.loads(file_content)
-
-print(aha)
-
-#with open('./static/data.json') as data:
-#    j = json.load(data)
-
-#print(j['spm'][6]['q'])
 
 # Variables
 answers = []
